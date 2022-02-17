@@ -17,22 +17,22 @@ function validationOfContact(userContactNumber)
 
 }
 
-function validationOfName()
+function validationOfName(userName)
 {
 	//validates any name having minimum of 2 and maximum of 20 char length
 	return /^[A-Za-z\s]{2,20}$/.test(userName);
 }
 
-function validationOfCity()
+function validationOfCity(userCity)
 {
 	//validates any name with space and '.' with maximum length of 30
 	return /^[a-zA-Z\s.]{3,30}$/.test(userCity);
 
 }
 
-function validationOfPincode()
+function validationOfPincode(userPincode)
 {
 	//validates indian pincode maxim leength is 6
-	return /^[0-9]{6,6}$/.test(userPincoe);
+	return /^[0-9]{6,6}$/.test(userPincode);
 
 }
